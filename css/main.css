@@ -12,8 +12,7 @@ body {
   background-repeat: repeat;
 }
 
-
-/* --------------- classes to show loading splash ---------------*/
+/* --------------- Classes to show loading splash ---------------*/
 
 h2 {
   font-family: 'Fredoka One', cursive;
@@ -60,7 +59,7 @@ h2 {
   top: 0;
 }
 
-@-webkit-keyframes load{
+@-webkit-keyframes load {
   0%,
   80%,
   100% {
