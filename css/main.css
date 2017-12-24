@@ -7,18 +7,26 @@
 }
 
 body {
-  background-color: #ff8710;
+  background-color: #fb9e1a;
   background-image: url("../assets/images/food-backgraund.png");
   background-repeat: repeat;
 }
 
+.body-color {
+  background-color: #ffffff;
+}
+
+h1, h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 6rem;
+  color: #ffffff;
+}
+
+
 /* --------------- Classes to show loading splash ---------------*/
 
 h2 {
-  font-family: 'Fredoka One', cursive;
-  font-size: 6rem;
   margin: 5rem 1rem;
-  color: #ffffff;
 }
 
 .loader:before,
@@ -86,3 +94,49 @@ h2 {
   width: 16rem;
   margin: 6em auto;
 }
+
+/* --------------- Classes for homepage---------------*/
+
+/* Classes for navbar */
+.navbar {
+  background-color: #fb9e1a;
+}
+
+.navbar-brand h1 {
+  margin: 0 3rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.fas {
+  color: #ffffff;
+}
+
+@media (min-width: 768px) { 
+  .margin-ul {
+    margin-left: 35rem;
+  }
+}
+
+@media (min-width: 992px) { 
+  .margin-ul {
+    margin-left: 58rem;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .margin-ul {
+    margin-left: 80rem;
+  }
+}
+
+
+
+

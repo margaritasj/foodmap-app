@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>FoodMap</title>
+  <!--Import Favicon-->
+  <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+  <!--Import Google Font-->
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+  <!--Import Icon Font-->
+  <link type="text/css" rel="stylesheet" href="../assets/icons/fontawesome-5.0.2/web-fonts-with-css/css/fontawesome-all.min.css">
+  <!--Import bootstrap.css-->
+  <link type="text/css" rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <!--Import main.css-->
+  <link type="text/css" rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="body-color">
+  <!-- Homepage -->
+  <!-- NavBar -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <!-- El logotipo y el icono que despliega el menú se agrupa para mostrarlos mejor en los dispositivos móviles -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <i class="fas fa-bars"></i>
+            </button>
+            <button type="button" class="navbar-toggle pull-right hidden-lg">
+              <i class="fas fa-user-circle"></i>
+            </button>
+            <a class="navbar-brand" href="#">
+              <h1> Foodmap</h1>
+            </a>
+          </div>
+          <!-- Agrupar los enlaces de navegación para ocultar al minimizar la barra  nav-left/ pull-right utilizar para modo escritorio-->
+          <div class="collapse navbar-collapse navbar-ex1-collapse margin-ul col-sm-offset-7 col-md-offset-9">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="#">
+                  <i class="fas fa-utensils"></i>
+                  <span> Restaurant </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-heart"></i>
+                  <span> Favoritos </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-user-circle"></i>
+                  <span> Iniciar sesión </span>
+                </a>
+              </li>
+              <li role="separator" class="divider">
+                <hr>
+              </li>
+              <li class="visible-xs-inline-block">
+                <a href="#">
+                  <i class="fas fa-info-circle"></i>
+                  <span> Información </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Main -->
+  <main>
+    <img src="../assets/images/logo-chef.png" alt="">
+  </main>
+
+  <!--Import jQuery before bootstrap.js-->
+  <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+  <!--Import data.js-->
+  <script type="text/javascript" src="../js/data.js"></script>
+  <!--Import app.js-->
+  <script type="text/javascript" src="../js/app.js"></script>
+</body>
+
+</html>
