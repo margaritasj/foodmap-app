@@ -1,6 +1,11 @@
 $(document).ready(function () {
-  // oculta el splash desvaneciendolo a transparente en un tiempo de 5 seg.
-  setTimeout(function () {
-    $("#splash").fadeOut(500);
-  }, 5000);
+  // Mostrar splash por un de tiempo de 5 seg.
+  $('#splash').show(500, function () {
+    setTimeout(function () {
+      setTimeout(function () {
+        window.location.href = "../foodmap/views/homepage.html";
+      }, 0);
+    }, 5000);
+  });
+
 });
