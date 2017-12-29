@@ -8,4 +8,9 @@ $(document).ready(function () {
     }, 5000);
   });
 
+  $("#modal-info").modal("show");
+
+
+
 });
+
