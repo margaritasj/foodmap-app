@@ -202,6 +202,34 @@ header.masthead {
   width: 33vh;
 }
 
+/* Modal register */
+
+.errores{
+  -webkit-boxshadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius:10px;
+  -webkit-border-radius: 10px;
+  background: #fb9e1a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  display: none;
+  font-size: 12px;
+  margin-top: -40px;
+  margin-left: 250px;
+  padding: 10px;
+  position: absolute;
+}
+.errores:before{ /* Este es un truco para crear una flechita */
+  content: '';
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #fb9e1a;
+  border-left: 8px solid transparent;
+  left: -16px;
+  position: absolute;
+  top: 5px;
+}
 
 /* Modal Login */
 
@@ -227,7 +255,7 @@ header.masthead {
     color: #ffffff;
   }
   .margin-ul {
-    margin-left: 35rem;
+    margin-left: 42rem;
   }
   .logo {
     width: 20vh;
@@ -237,18 +265,21 @@ header.masthead {
     color: black;
     background-image: url("../assets/images/background-phone.jpg");
     background-size: cover;
-    min-height: 95.1vh;
+    min-height: 95vh;
     margin-top: 5rem;
     background-position: center;
     background-repeat: no-repeat;
   }
   .div-info {
     background: rgba(0, 0, 0, 0.4);
-    min-height: 95.1vh;
+    min-height: 95vh;
     padding: 3rem;
   }
   .margin-row-top {
-    margin-top: 15rem;
+    margin-top: 2rem;
+  }
+  .img-api {
+    width: 15vh;
   }
 }
 
@@ -264,17 +295,20 @@ header.masthead {
     color: black;
     background-image: url("../assets/images/background.jpg");
     background-size: cover;
-    min-height: 92vh;
+    min-height: 91vh;
     position: relative;
     margin-top: 5rem;
   }
   .div-info {
     background: rgba(0, 0, 0, 0.4);
-    min-height: 92vh;
+    min-height: 91vh;
     padding: 3rem;
   }
   .margin-row-top {
-    margin-top: 10rem;
+    margin-top: 6rem;
+  }
+  .img-api {
+    width: 15vh;
   }
 }
 
@@ -286,7 +320,7 @@ header.masthead {
     color: #ffffff;
   }
   .margin-ul {
-    margin-left: 85rem;
+    margin-left: 94rem;
   }
   .logo {
     width: 25vh;
@@ -296,16 +330,19 @@ header.masthead {
     color: black;
     background-image: url("../assets/images/background.jpg");
     background-size: cover;
-    min-height: 92vh;
+    min-height: 92.2vh;
     position: relative;
     margin-top: 5rem;
   }
   .div-info {
     background: rgba(0, 0, 0, 0.4);
-    min-height: 92vh;
+    min-height: 92.2vh;
     padding: 3rem;
   }
   .margin-row-top {
     margin-top: 5rem;
+  }
+  .img-api {
+    width: 25vh;
   }
 }
