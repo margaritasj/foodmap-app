@@ -167,7 +167,7 @@ h2 {
 
 /* --------------- Classes for homepage---------------*/
 
-header.masthead {
+.background{
   color: black;
   background-image: url("../assets/images/background-phone.jpg");
   background-size: cover;
@@ -183,9 +183,30 @@ header.masthead {
   padding: 3rem;
 }
 
+.margin-top-alert {
+  margin-top: 22rem;
+}
+
+.fa-frown {
+  font-size: 8rem;
+}
+
+.fa-medapps { 
+  font-size: 2rem;
+  font-weight: 800;
+}
+
 
 /* --------------- Classes for Results---------------*/
-
+.background2{
+  color: #ffffff;
+  background-image: url("../assets/images/background2-phone.jpg");
+  background-size: cover;
+  min-height: 92.2vh;
+  margin-top: 5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* ------------- Classes for Modales------------- */
 
@@ -220,7 +241,9 @@ header.masthead {
   padding: 10px;
   position: absolute;
 }
-.errores:before{ /* Este es un truco para crear una flechita */
+
+.errores:before{
+   /* Este es un truco para crear una flechita */
   content: '';
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
@@ -261,7 +284,7 @@ header.masthead {
     width: 20vh;
     margin-bottom: 0.8rem;
   }
-  header.masthead {
+  .background {
     color: black;
     background-image: url("../assets/images/background-phone.jpg");
     background-size: cover;
@@ -281,6 +304,18 @@ header.masthead {
   .img-api {
     width: 15vh;
   }
+  .margin-top-alert {
+    margin-top: 18rem;
+  }
+  .background2{
+    color: #ffffff;
+    background-image: none;
+  }
+  
+  .carousel .item img {
+    width: auto;
+    height: 55vh;
+  }
 }
 
 @media (min-width: 992px) {
@@ -291,7 +326,7 @@ header.masthead {
     width: 20vh;
     margin-bottom: 0.8rem;
   }
-  header.masthead {
+  .background {
     color: black;
     background-image: url("../assets/images/background.jpg");
     background-size: cover;
@@ -305,10 +340,24 @@ header.masthead {
     padding: 3rem;
   }
   .margin-row-top {
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
   .img-api {
-    width: 15vh;
+    width: 13vh;
+  }
+  .background2{
+    color: #ffffff;
+    background-image: none;
+  }
+  .carousel .item img {
+    width: auto;
+    height: 40vh;
+  }
+  .col-md-offset-2 {
+    margin-top: 1.5rem;
+  }
+  .margin-top-alert {
+    margin-top: 23rem;
   }
 }
 
@@ -326,7 +375,7 @@ header.masthead {
     width: 25vh;
     margin-bottom: 0.8rem;
   }
-  header.masthead {
+  .background {
     color: black;
     background-image: url("../assets/images/background.jpg");
     background-size: cover;
@@ -339,10 +388,20 @@ header.masthead {
     min-height: 92.2vh;
     padding: 3rem;
   }
-  .margin-row-top {
-    margin-top: 5rem;
-  }
   .img-api {
-    width: 25vh;
+    width: 18vh;
   }
+  .margin-top-alert {
+    margin-top: 28rem;
+  }
+  .background2{
+    color: #ffffff;
+    background-image: none;
+  }
+  .carousel .item img {
+    width: auto;
+    height: 80vh;
+  }
+
+  
 }

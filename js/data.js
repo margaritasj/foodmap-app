@@ -1,5 +1,5 @@
-var restaurant = {
-  'La Choza de la Anaconda': {
+var restaurants = [{
+    'name': 'La Choza de la Anaconda',
     'description': 'Siente la Selva',
     'qualification': 4,
     'location': {
@@ -67,8 +67,8 @@ var restaurant = {
       }
     ]
   },
-
-  'El Bolivariano': {
+  {
+    'name': 'El Bolivariano',
     'description': 'El verdadero sabor de la Antigua Cocina Peruana',
     'qualification': 5,
     'location': {
@@ -134,8 +134,8 @@ var restaurant = {
       }
     ]
   },
-
-  'Edo Sushi Bar': {
+  {
+    'name': 'Edo Sushi Bar',
     'informacion': 'Más de 12 años compartiendo tradición japonesa que engrandece el sabor del Perú',
     'qualification': 4.4,
     'location': {
@@ -189,8 +189,8 @@ var restaurant = {
       },
     ]
   },
-
-  'La Muralla': {
+  {
+    'name': 'La Muralla',
     'informacion': 'Atención todos los días del año con lo mejor de la comida peruana, criolla y pescados y mariscos',
     'qualification': 4,
     'location': {
@@ -238,8 +238,8 @@ var restaurant = {
       },
     ]
   },
-
-  'El 10': {
+  {
+    'name': 'El 10',
     'informacion': 'La mejor en carnes y vino',
     'qualification': 5,
     'location': {
@@ -289,8 +289,8 @@ var restaurant = {
       },
     ]
   },
-
-  'Yen Yen': {
+  {
+    'name': 'Yen Yen',
     'informacion': 'El verdadero sabor oriental disfrutalo en familia',
     'qualification': 5,
     'location': {
@@ -352,4 +352,4 @@ var restaurant = {
       }
     ]
   },
-};
+];

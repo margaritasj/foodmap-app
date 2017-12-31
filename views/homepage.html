@@ -84,7 +84,7 @@
   </nav>
 
   <!-- Header-->
-  <header class="masthead">
+  <header class="masthead background">
     <div class="container-fluid h-100 div-info">
       <div class="row h-100 margin-row-top">
         <div class="col-lg-10 my-auto">
@@ -100,11 +100,12 @@
             <div class="form-row">
               <div class="col-xs-12 col-md-7 col-md-offset-3 mb-md-0">
                 <br>
-                <input type="text" class="form-control form-control-lg" placeholder="En que distrito deseas buscar..?">
+                <input id="input-district" type="text" class="form-control form-control-lg" placeholder="En que distrito deseas buscar? ...">
               </div>
               <div class="col-xs-12 col-md-1 text-center">
                 <br>
-                <button type="submit" class="btn btn-outline btn-xl">Search</button>
+                <button id="btn-search" type="submit" class="btn btn-outline btn-xl">Search</button>
+                <br>
               </div>
             </div>
           </form>
@@ -226,6 +227,37 @@
                 <a href="#" class="text-danger">Click here</a>
               </p>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Alert-->
+  <div class="modal fade in display-none style-modal" id="alert-danger">
+    <div class="modal-dialog">
+      <div id="">
+        <div class="margin-top-alert">
+          <div class="alert alert-danger alert-dismissible fade in" role="alert">
+            <h4 class="text-center">
+              <font>
+                <font>Oh no!...</font>
+                <font>¡Es posible que no encontremos resultados para este distrito!</font>
+              </font>
+            </h4>
+            <p class="text-center">
+              <i class="far fa-frown"></i>
+            </p>
+            <p class="text-center">
+              <font>
+                <font>Vuelva a intentarlo, porfavor. </font>
+              </font>
+            </p>
+            <p class="text-center">
+              <i class="fab fa-medapps"></i>
+              <font>
+                <font>Como última instancia prueba con Los Olivos!, para revisar el funcionamiento de nuestro buscador</font>
+              </font>
+            </p>
           </div>
         </div>
       </div>
