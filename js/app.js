@@ -19,7 +19,7 @@ $(document).ready(function () {
     // LocalStorage almacenaremos localmente el valor introducido en el input
     localStorage.setItem('district', districtSearch);
 
-    // Obteniendo el valor introducido en el input.  
+    // Consultar el valor guardado en la variable.  
     var district = localStorage.getItem('district').toUpperCase();
     console.log('Lectura: ', district);
 
