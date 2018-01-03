@@ -25,13 +25,13 @@ $(document).ready(function () {
           console.log('Se encontro uno en la siguiente dirección:', value);
           accountant++;
           console.log(accountant);
-          if (accountant > 0) {
-            window.location.href = '../views/results.html';
-          } else {
-            $('#alert-danger').modal('show');
-          }
         }
       });
+      if (accountant > 0) {
+        window.location.href = '../views/results.html';
+      } else {
+        $('#alert-danger').modal('show');
+      }
     }
   });
 });

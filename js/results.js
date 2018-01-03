@@ -1,7 +1,12 @@
 $(document).ready(function () {
-  /* -------- Mostrar splash por un de tiempo de 5 seg. -------- */
+  /* -------- declarando variables de los elementos a utilizar. -------- */
   var container = $('.photo-restaurant');
   var bsExample = $('.bs-example2');
+
+  var modal = $('#modal-info');
+  var tittle = $('#tittle');
+  var logo = $('#logo');
+  var description = $('.p-info');
 
   var district = localStorage.getItem('district').toUpperCase();
   // Recorriendo el JSON data.js
@@ -19,12 +24,13 @@ $(document).ready(function () {
         var col = $('<div class = "col-xs-12 col-md-8 col-md-offset-2"> </div>');
         var thumbnail = $('<a class = "thumbnail card-photo" data-src="holder.js/100%x180"> </a>');
         var img = $('<img class = "" src="" alt="">');
-        var overlay = $('<div class="image-overlay"></div>');
+        var overlay = $('<div class="image-overlay" ></div>');
         var nameRestaurant = $('<div class="text text-center"></div>');
         /* var icon = $('<i class="fas fa-search-plus"></i>'); */
 
         var imgPhoto = img.attr("src", photoRestaurants);
-        nameRestaurant.html(name);
+
+        nameRestaurant.html(restaurants[i].name);
         container.append(bsExample);
         bsExample.append(col);
         col.append(nameRestaurant);
@@ -33,16 +39,26 @@ $(document).ready(function () {
         thumbnail.append(overlay);
         thumbnail.append(img);
 
+
+        // Creando los contenedores para el modal:
+        var imglogo = logo.attr("src", logoRestaurants);
+
+        tittle.html(name);
+
+
         // añadiendo mouseover a las imagenes
         $('.thumbnail').mouseover(function () {
           $('.image-overlay').show();
+          // añadiendo modal
+          $('.image-overlay').click(function () {
+            $('#modal-info').modal('show');
+          });
         }).mouseout(function () {
           $('.image-overlay').hide();
         });
 
         $('img').addClass('size-photo');
 
-        
       }
     });
   }
