@@ -24,27 +24,29 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <!-- El logotipo y el icono que despliega el menú se agrupa para mostrarlos mejor en los dispositivos móviles -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-              <i class="fas fa-bars"></i>
+          <div class="btn-group btn-group-lg pull-right" role="group" aria-label="Large button group">
+            <button type="button" class="btn btn-default" id="list">
+              <i class="fas fa-list"></i>
             </button>
-            <button type="submit" class="navbar-toggle pull-right hidden-lg" href="#login" data-toggle="modal">
-              <i class="fas fa-user"></i>
+            <button type="button" class="btn btn-default" id="map">
+              <i class="fas fa-map-marker-alt"></i>
             </button>
           </div>
         </div>
       </div>
     </div>
   </nav>
-
   <!-- Container results-->
-  <div id="results">
-    <div class="container photo-restaurant">
-      <div class="bs-example2" data-example-id="simple-thumbnails">
+  <section>
+    <div id="results">
+      <div class="container photo-restaurant">
+        <div class="bs-example2" data-example-id="simple-thumbnails">
+            
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+
 
   <!--Import jQuery before bootstrap.js-->
   <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
