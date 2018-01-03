@@ -290,25 +290,41 @@ a .size-photo {
 .image-overlay {
   width: 27.8rem;
   height: 27.3rem;
-  background-color: #000000;
+  background-color: transparent;
   border-radius: 0.5rem;
   z-index: 1;
-  opacity: 0.2;
-  position: fixed;
+  opacity: 1;
   display: none;
+  position: absolute;
+}
+
+.image-overlay:hover {
+  background-color: #000000;
+  opacity: 0.4;
 }
 
 .text {
   color: white;
   font-size: 3rem;
   font-weight: 700;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  position: relative;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  border: 0.3rem solid #ffffff;
+  top: 70%;
+  background-color: #fb9e1a;
 }
 
+.fas.fa-search-plus::before {
+  color: white;
+  font-size: 5rem;
+  font-weight: 700;
+  position: relative;
+  top: 70%;  
+  display: flex;
+  justify-content: center;
+
+}
 /* --------------- Medias queries ---------------*/
 
 @media (min-width: 768px) {
@@ -467,7 +483,7 @@ a .size-photo {
     height: 68.5vh;
   }
   .image-overlay {
-    width: 70.75rem;
+    width: 70.8rem;
     height: 44.25rem;
   }
   .text {

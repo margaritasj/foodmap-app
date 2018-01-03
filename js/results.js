@@ -9,6 +9,8 @@ $(document).ready(function () {
     var districts = restaurants[i].location;
     var name = restaurants[i].name;
     var photoRestaurants = restaurants[i].photo;
+    var logoRestaurants = restaurants[i].logo;
+    var descriptionRestaurants = restaurants[i].logo;
 
     $.each(districts, function (key, value) {
       var locations = key.toUpperCase();
@@ -19,15 +21,17 @@ $(document).ready(function () {
         var img = $('<img class = "" src="" alt="">');
         var overlay = $('<div class="image-overlay"></div>');
         var nameRestaurant = $('<div class="text text-center"></div>');
+        /* var icon = $('<i class="fas fa-search-plus"></i>'); */
 
         var imgPhoto = img.attr("src", photoRestaurants);
         nameRestaurant.html(name);
         container.append(bsExample);
         bsExample.append(col);
+        col.append(nameRestaurant);
         col.append(thumbnail);
+        /* thumbnail.append(icon);*/
         thumbnail.append(overlay);
         thumbnail.append(img);
-        col.append(nameRestaurant);
 
         // añadiendo mouseover a las imagenes
         $('.thumbnail').mouseover(function () {
@@ -37,6 +41,8 @@ $(document).ready(function () {
         });
 
         $('img').addClass('size-photo');
+
+        
       }
     });
   }
